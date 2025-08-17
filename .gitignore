@@ -1,0 +1,14 @@
+# Node
+node_modules/
+dist/
+npm-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+
+# Env & local overrides
+.env*
+!.env.example
+
+# Editor/OS
+.vscode/
+.DS_Store
