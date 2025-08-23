@@ -14,6 +14,12 @@ import { attachUserFromCookie } from "./utils/validate"; // whatever you use to 
 
 // src/app.ts
 import employerWorkers from "./routes/employerWorkers";
+import employerAccount from "./routes/employerAccount";
+// ...
+// src/app.ts
+import accountRoutes from "./routes/account";
+// ...
+
 
 
 const app = express();
@@ -37,5 +43,8 @@ app.use("/api/employer", employerRoutes);
 app.use("/api/frontdesk", frontdeskRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/employer", employerWorkers);
+app.use("/api/employer", employerAccount);
+app.use("/api", accountRoutes);
+
 
 export default app;
