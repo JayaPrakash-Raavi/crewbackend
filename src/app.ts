@@ -12,6 +12,8 @@ import frontdeskRoutes from "./routes/frontdesk";
 import adminRoutes from "./routes/admin";
 import { attachUserFromCookie } from "./utils/validate"; // whatever you use to read JWT into req.user
 
+// src/app.ts
+import employerWorkers from "./routes/employerWorkers";
 
 
 const app = express();
@@ -34,5 +36,6 @@ app.use("/api", employerRequests);
 app.use("/api/employer", employerRoutes);
 app.use("/api/frontdesk", frontdeskRoutes);
 app.use("/api/admin", adminRoutes);
+app.use("/api/employer", employerWorkers);
 
 export default app;
