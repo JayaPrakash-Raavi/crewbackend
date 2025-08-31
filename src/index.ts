@@ -1,6 +1,5 @@
 import * as dotenv from "dotenv";
-// load .env.local explicitly; change to ".env" if you prefer that filename
-dotenv.config({ path: ".env.local" });
+dotenv.config({ path: ".env.local" }); // or ".env" if you prefer
 
 import app from "./app";
 
